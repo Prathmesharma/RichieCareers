@@ -1271,11 +1271,38 @@ p {
     bottom: 0;
   }
   
+  .hero {
+    padding: 5rem 1.25rem 3rem;
+    min-height: 70vh;
+    background-position: center top;
+  }
+
+  .hero-content {
+    max-width: 92vw;
+    padding: 0 0.5rem;
+  }
+
+  .hero-title {
+    font-size: clamp(2rem, 8vw, 3rem);
+    line-height: 1.15;
+  }
+
+  .hero-text {
+    margin-bottom: 1.8rem;
+    max-width: 100%;
+  }
+
   .hero-ctas {
     flex-direction: column;
     gap: 1rem;
+    align-items: stretch;
   }
-  
+
+  .hero-ctas .btn {
+    width: 100%;
+    max-width: 100%;
+  }
+
   .section-header {
     flex-direction: column;
     align-items: flex-start;
