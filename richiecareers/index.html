@@ -141,6 +141,58 @@
             </div>
           </div>
 
+          <div class="form-container">
+            <form id="submission-form" class="premium-form">
+              <h2 class="form-title">Model Submission Form</h2>
+              <div class="form-group form-group-row">
+                <div>
+                  <label for="sub-first-name">First Name</label>
+                  <input type="text" id="sub-first-name" name="firstName" placeholder="First Name" required>
+                </div>
+                <div>
+                  <label for="sub-last-name">Last Name</label>
+                  <input type="text" id="sub-last-name" name="lastName" placeholder="Last Name" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="sub-email">Email Address</label>
+                <input type="email" id="sub-email" name="email" placeholder="you@example.com" required>
+              </div>
+              <div class="form-group">
+                <label for="sub-phone">Phone Number</label>
+                <input type="tel" id="sub-phone" name="phone" placeholder="(123) 456-7890">
+              </div>
+              <div class="form-group">
+                <label for="sub-division">Division</label>
+                <select id="sub-division" name="division" required>
+                  <option value="">Select a division</option>
+                  <option value="Women">Women</option>
+                  <option value="Men">Men</option>
+                  <option value="Kids">Kids</option>
+                  <option value="Commercial">Commercial</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="sub-dob">Date of Birth</label>
+                <input type="date" id="sub-dob" name="dob">
+              </div>
+              <div class="form-group">
+                <label for="sub-height">Height</label>
+                <input type="text" id="sub-height" name="height" placeholder="e.g. 5'9&quot;">
+              </div>
+              <div class="form-group">
+                <label for="sub-notes">Additional Notes</label>
+                <textarea id="sub-notes" name="notes" rows="5" placeholder="Tell us about your experience, interests, and any special skills."></textarea>
+              </div>
+              <div class="form-group">
+                <label class="form-section-divider">Upload Digitals</label>
+                <div class="file-drop-area">
+                  <span class="file-msg">Click to attach your images or drag files here.</span>
+                  <input type="file" id="sub-images" class="file-input" multiple accept="image/*">
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit Application</button>
+            </form>
           </div>
         </div>
       </div>
@@ -244,6 +296,34 @@
             </div>
           </div>
 
+          <div class="form-container">
+            <form id="general-contact-form" class="premium-form">
+              <h2 class="form-title">Contact Richie Careers</h2>
+              <div class="form-group form-group-row">
+                <div>
+                  <label for="con-name">Name</label>
+                  <input type="text" id="con-name" name="name" placeholder="Your name" required>
+                </div>
+                <div>
+                  <label for="con-email">Email</label>
+                  <input type="email" id="con-email" name="email" placeholder="you@example.com" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="con-phone">Phone</label>
+                <input type="tel" id="con-phone" name="phone" placeholder="(123) 456-7890">
+              </div>
+              <div class="form-group">
+                <label for="con-subject">Subject</label>
+                <input type="text" id="con-subject" name="subject" placeholder="Booking inquiry, talent question, etc.">
+              </div>
+              <div class="form-group">
+                <label for="con-message">Message</label>
+                <textarea id="con-message" name="message" rows="5" placeholder="Tell us how we can help."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
@@ -269,6 +349,50 @@
             </div>
           </div>
 
+          <div class="form-container">
+            <form id="request-form" class="premium-form">
+              <h2 class="form-title">Package Request Form</h2>
+              <div class="form-group">
+                <label for="req-company">Company</label>
+                <input type="text" id="req-company" name="company" placeholder="Company or brand name" required>
+              </div>
+              <div class="form-group form-group-row">
+                <div>
+                  <label for="req-contact-name">Contact Name</label>
+                  <input type="text" id="req-contact-name" name="contactName" placeholder="Full name" required>
+                </div>
+                <div>
+                  <label for="req-email">Email</label>
+                  <input type="email" id="req-email" name="email" placeholder="you@company.com" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="req-phone">Phone</label>
+                <input type="tel" id="req-phone" name="phone" placeholder="(123) 456-7890">
+              </div>
+              <div class="form-group">
+                <label for="req-model-type">Preferred Talent</label>
+                <select id="req-model-type" name="modelType">
+                  <option value="">Choose a model type</option>
+                  <option value="Women">Women</option>
+                  <option value="Men">Men</option>
+                  <option value="Kids">Kids</option>
+                  <option value="UGC">UGC Creators</option>
+                  <option value="Commercial">Commercial</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="req-dates">Preferred Dates</label>
+                <input type="text" id="req-dates" name="preferredDates" placeholder="Project dates or timeframe">
+              </div>
+              <div class="form-group">
+                <label for="req-notes">Project Details</label>
+                <textarea id="req-notes" name="details" rows="5" placeholder="Describe the campaign, deliverables, and location."></textarea>
+              </div>
+              <input type="hidden" id="req-preselected" name="preselectedModel" value="">
+              <button type="submit" class="btn btn-primary">Send Request</button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
