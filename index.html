@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RICHIE CAREERS | Premium Talent & Modeling Agency</title>
+  <meta name="description" content="At Richie Careers Management, we shape modern, sustainable, and intentional careers in modeling, commercial print, and television. Based in Los Angeles, California.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Luxurious Serif Heading and modern clean body font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" id="nav-logo">RICHIE CAREERS</a>
+      <div class="nav-links" id="nav-links">
+        <a href="#home" class="nav-link active" data-view="home">HOME</a>
+        <a href="#about" class="nav-link" data-view="about">ABOUT US</a>
+        <a href="#submissions" class="nav-link" data-view="submissions">SUBMISSIONS</a>
+        <a href="#conditions" class="nav-link" data-view="conditions">CONDITIONS</a>
+        <a href="#contact" class="nav-link" data-view="contact">CONTACT</a>
+        <a href="#request" class="btn-request" data-view="request">PACKAGE REQUEST</a>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Main View Container -->
+  <main class="main-content" id="main-content">
+    
+    <!-- HOME VIEW -->
+    <section id="view-home" class="view-section active-view">
+      <!-- Hero Section -->
+      <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <span class="hero-subtitle">WELCOME TO RICHIE CAREERS MANAGEMENT</span>
+          <h1 class="hero-title">Building Intentional, Modern, and Sustainable Careers in Acting and Modeling.</h1>
+          <div class="hero-country-list">
+            <span class="hero-country-pill">United Kingdom</span>
+            <span class="hero-country-pill">United States</span>
+            <span class="hero-country-pill">Europe</span>
+            <span class="hero-country-pill">Kuwait</span>
+          </div>
+          <div class="hero-ctas">
+            <a href="#submissions" class="btn btn-primary">Apply as Talent</a>
+            <a href="#request" class="btn btn-secondary">Book a Package</a>
+          </div>
+        </div>
+      </header>
+
+      <!-- Roster / Boards Section -->
+      <section class="roster-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">OUR TALENT</h2>
+            <div class="filters" id="roster-filters">
+              <button class="filter-btn active" data-filter="all">All Boards</button>
+              <button class="filter-btn" data-filter="Women">Women's Division</button>
+              <button class="filter-btn" data-filter="Men">Men's Division</button>
+            </div>
+          </div>
+          <div class="roster-grid" id="roster-grid">
+            <!-- Model cards are injected here dynamically by app.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Blogs Section -->
+      <section class="blogs-section">
+        <div class="container">
+          <h2 class="section-title text-center">INSIGHTS & NEWS</h2>
+          <div class="blogs-grid" id="blogs-grid">
+            <!-- Blog posts are injected here dynamically by app.js -->
+          </div>
+        </div>
+      </section>
+    </section>
+
+
+    <!-- ABOUT US VIEW -->
+    <section id="view-about" class="view-section">
+      <div class="container page-padding">
+        <div class="about-grid">
+          <div class="about-text-content">
+            <span class="sub-heading">INTERNATIONAL TALENT MANAGEMENT</span>
+            <h1 class="page-title">ABOUT US</h1>
+            <p class="lead">Richie Careers Management is an international talent management, booking, and career development agency dedicated to discovering, launching, and representing actors and models across the United Kingdom, United States, Europe, and Kuwait.</p>
+            <p>Built on diversity, creativity, and authentic collaboration, we work with emerging and established talent in fashion, commercial, beauty, voiceover, theatrical, television, film, and digital media. Our mission is to help actors and models build successful, sustainable careers while creating opportunities in some of the world's most competitive entertainment and fashion markets.</p>
+            <p>We specialize in talent launching and career development, providing strategic guidance, professional branding, portfolio development, casting support, and direct access to industry opportunities. Through innovative marketing and effective use of social media, we help our talent increase visibility, strengthen their personal brand, and connect with key decision-makers.</p>
+            <p>Our team takes a hands-on and personalized approach to representation. We create customized talent packages and present them directly to casting directors, production companies, brands, agencies, and clients, ensuring a professional, efficient, and collaborative booking process.</p>
+            <p>With over two decades of combined industry experience, we understand the evolving demands of the global entertainment and fashion industries. We work closely with both talent and clients to deliver exceptional results through strong communication, transparency, and strategic career planning.</p>
+            <p>At Richie Careers Management, we proudly represent talent of all genders, sizes, backgrounds, and identities. We believe individuality is a strength, and our goal is to open doors, launch careers, and create opportunities that reflect the diverse future of fashion, film, television, and entertainment worldwide.</p>
+            <p>Our mission is simple: Discover talent. Launch careers. Create global opportunities.</p>
+            <a href="mailto:booking@richiecareers.com?subject=Submission" class="btn btn-primary margin-top">Get in Touch</a>
+          </div>
+          <div class="about-visuals">
+            <div class="about-image-wrapper">
+              <img src="assets/hero_bg.png" alt="Editorial Shoot Setup" class="about-img">
+            </div>
+            <div class="brand-showcase">
+              <h3>BRANDS WE WORK WITH</h3>
+              <p class="brand-list">Nike, Guess, Puma, Reebok, Adidas, Banana Republic, American Eagle, The North Face, Lacoste, Macy's, Amazon, Apple, Microsoft, Google, Sony, T-Mobile, Tesla, Coca-Cola, Toyota, Kia, Lexus, Abercrombie, Levi's, Skechers, American Express, Celsius, and more.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SUBMISSIONS VIEW -->
+    <section id="view-submissions" class="view-section">
+      <div class="container page-padding">
+        <div class="form-layout">
+          <div class="form-info">
+            <h1 class="page-title">BECOME A MODEL</h1>
+            <p class="lead">To apply for modeling opportunities, please submit your images via our website.</p>
+            <p>For fashion models, we ask that you submit your measurements along with digitals taken in simple, natural lighting and with minimal makeup.</p>
+            <p>For those interested in our commercial and print division, there is no need to include digitals. Instead, please provide your headshots, a resume detailing your previous bookings in commercial print or voice-over work, and any additional skills or hobbies that might be relevant.</p>
+            <p>If your profile aligns with what we’re looking for, one of our agents will be in touch with you directly.</p>
+            
+            <div class="submission-guidelines">
+              <h3>DIGITAL GUIDELINES:</h3>
+              <ol class="guideline-list">
+                <li>Headshot</li>
+                <li>Profile</li>
+                <li>Half body shot</li>
+                <li>Full length body shot</li>
+                <li>3/4 shot straight on</li>
+                <li>No makeup or retouched</li>
+                <li>No posing, be natural</li>
+                <li>White background</li>
+                <li>Plain tank top & jeans</li>
+                <li>Good natural lighting</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="form-container">
+            <form id="submission-form" class="premium-form">
+              <div class="form-title">Model Submission</div>
+              <div class="form-group form-group-row">
+                <div>
+                  <label for="sub-first-name">First Name</label>
+                  <input type="text" id="sub-first-name" name="firstName" required>
+                </div>
+                <div>
+                  <label for="sub-last-name">Last Name</label>
+                  <input type="text" id="sub-last-name" name="lastName" required>
+                </div>
+              </div>
+              <div class="form-group form-group-row">
+                <div>
+                  <label for="sub-email">Email</label>
+                  <input type="email" id="sub-email" name="email" required>
+                </div>
+                <div>
+                  <label for="sub-phone">Phone</label>
+                  <input type="tel" id="sub-phone" name="phone">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="sub-location">Location</label>
+                <select id="sub-location" name="location" required>
+                  <option value="">Choose a region</option>
+                  <option>United Kingdom</option>
+                  <option>United States</option>
+                  <option>Europe</option>
+                  <option>Kuwait</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="sub-division">Talent Division</label>
+                <select id="sub-division" name="division" required>
+                  <option value="">Choose a division</option>
+                  <option>Women</option>
+                  <option>Men</option>
+                  <option>Kids</option>
+                  <option>Commercial</option>
+                  <option>Voiceover</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="sub-portfolio">Portfolio Link or Reel</label>
+                <input type="text" id="sub-portfolio" name="portfolio">
+              </div>
+              <div class="form-group">
+                <label for="sub-images">Upload Images</label>
+                <input type="file" id="sub-images" name="images" accept="image/*" multiple>
+              </div>
+              <div class="form-group">
+                <label for="sub-notes">Tell us about your experience</label>
+                <textarea id="sub-notes" name="notes" rows="4"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit Application</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- CONDITIONS VIEW -->
+    <section id="view-conditions" class="view-section">
+      <div class="container page-padding">
+        <div class="conditions-container">
+          <span class="sub-heading text-center">AGENCY STANDARDS</span>
+          <h1 class="page-title text-center">BOOKING CONDITIONS</h1>
+          <p class="lead text-center max-width-text">The following conditions ensure a smooth, professional experience for all parties when booking with our agency.</p>
+          
+          <div class="conditions-grid">
+            <div class="condition-card">
+              <span class="condition-num">01</span>
+              <h3>Agency Fees</h3>
+              <p>A 20% agency fee applies to all bookings unless otherwise agreed in writing.</p>
+            </div>
+            <div class="condition-card">
+              <span class="condition-num">02</span>
+              <h3>Model Rates & Overtime</h3>
+              <p>Rates are based on an eight-hour day. Overtime is billed at time-and-a-half beyond eight hours unless other terms are negotiated.</p>
+            </div>
+            <div class="condition-card">
+              <span class="condition-num">03</span>
+              <h3>Usage Rights</h3>
+              <p>Usage is limited to what is agreed upon at booking. Any extended or additional usage requires prior written approval.</p>
+            </div>
+            <div class="condition-card">
+              <span class="condition-num">04</span>
+              <h3>Payment Terms & Late Fees</h3>
+              <p>Payments are due by the agreed date. Late payments will incur a 10% weekly penalty until settled.</p>
+            </div>
+            <div class="condition-card">
+              <span class="condition-num">05</span>
+              <h3>Cancellation Policy</h3>
+              <p>Cancellations within 24 hours of the call time incur the full fee. Within 48 hours, half fee.</p>
+            </div>
+            <div class="condition-card">
+              <span class="condition-num">06</span>
+              <h3>Weather Permits</h3>
+              <p>For same-day weather-related cancellations, half fee applies if rescheduled immediately, full fee if not. Early weather cancellations follow standard terms. "Book or release" applies when secondary jobs are ready.</p>
+            </div>
+            <div class="condition-card">
+              <span class="condition-num">07</span>
+              <h3>Reshoots & Rebookings</h3>
+              <p>If additional shoot days or re-casting are required, new availability and additional fees will apply based on the scope.</p>
+            </div>
+            <div class="condition-card">
+              <span class="condition-num">08</span>
+              <h3>Travel Policies</h3>
+              <p>Travel exceeding 3 hours one-way or requiring overnight stay will incur additional fees. Clients are responsible for travel costs unless otherwise agreed.</p>
+            </div>
+            <div class="condition-card">
+              <span class="condition-num">09</span>
+              <h3>Communication Protocol</h3>
+              <p>All communication must go through our agency. Clients may not contact talent directly without prior consent.</p>
+            </div>
+          </div>
+          
+          <div class="conditions-footer text-center">
+            <p>By proceeding with bookings, you agree to these terms. We are committed to fostering a professional, supportive, and dignified environment for our models. Your adherence to these conditions helps protect and uphold that standard.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- CONTACT VIEW -->
+    <section id="view-contact" class="view-section">
+      <div class="container page-padding">
+        <h1 class="page-title text-center">CONTACT US</h1>
+        <p class="lead text-center" style="margin-bottom: 60px;">Reach out and let's create amazing opportunities together.</p>
+        
+        <!-- Two Column Layout -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; margin-bottom: 40px;">
+          
+          <!-- LEFT SIDE: Contact Links -->
+          <div>
+            <div style="display: flex; flex-direction: column; gap: 40px;">
+              <!-- Instagram -->
+              <div style="padding: 40px; border: 2px solid #d4af37; border-radius: 8px; text-align: center; background: rgba(212, 175, 55, 0.05);">
+                <h3 style="font-family: 'Playfair Display', serif; font-size: 28px; color: #d4af37; margin-bottom: 20px;">INSTAGRAM</h3>
+                <a href="https://www.instagram.com/richiecareers?igsh=MXJqaTdwd2g5cjlqcw==" target="_blank" style="font-size: 18px; color: #fff; text-decoration: none; transition: color 0.3s ease; border-bottom: 2px solid #d4af37; padding-bottom: 10px; display: inline-block; font-weight: 500;">
+                  @richiecareers
+                </a>
+                <p style="color: #aaa; margin-top: 15px; font-size: 14px;">Follow us for the latest updates</p>
+              </div>
+
+              <!-- Email -->
+              <div style="padding: 40px; border: 2px solid #d4af37; border-radius: 8px; text-align: center; background: rgba(212, 175, 55, 0.05);">
+                <h3 style="font-family: 'Playfair Display', serif; font-size: 28px; color: #d4af37; margin-bottom: 20px;">EMAIL</h3>
+                <a href="mailto:avneetsmac@gmail.com" style="font-size: 18px; color: #fff; text-decoration: none; transition: color 0.3s ease; border-bottom: 2px solid #d4af37; padding-bottom: 10px; display: inline-block; font-weight: 500;">
+                  avneetsmac@gmail.com
+                </a>
+                <p style="color: #aaa; margin-top: 15px; font-size: 14px;">Direct contact for inquiries</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT SIDE: Contact Form -->
+          <div>
+            <form id="general-contact-form" class="premium-form">
+              <div class="form-title">Contact Richie Careers</div>
+              <div class="form-group form-group-row">
+                <div>
+                  <label for="con-name">Name</label>
+                  <input type="text" id="con-name" name="name" required>
+                </div>
+                <div>
+                  <label for="con-email">Email</label>
+                  <input type="email" id="con-email" name="email" required>
+                </div>
+              </div>
+              <div class="form-group form-group-row">
+                <div>
+                  <label for="con-phone">Phone</label>
+                  <input type="tel" id="con-phone" name="phone">
+                </div>
+                <div>
+                  <label for="con-location">Location</label>
+                  <select id="con-location" name="location">
+                    <option value="">Choose a region</option>
+                    <option>United Kingdom</option>
+                    <option>United States</option>
+                    <option>Europe</option>
+                    <option>Kuwait</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="con-message">Message</label>
+                <textarea id="con-message" name="message" rows="5"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- PACKAGE REQUEST VIEW -->
+    <section id="view-request" class="view-section">
+      <div class="container page-padding">
+        <div class="form-layout reverse">
+          <div class="form-info">
+            <h1 class="page-title">PACKAGE REQUEST</h1>
+            <p class="lead">Kindly complete the form with your booking details and specify the model type needed for the job.</p>
+            <p>Our client relations agents will curate a custom talent catalog package matching your specific brand requirements and submit it directly to your casting directors.</p>
+            <p>We work with global brands, television networks, fitness apparel labels, skincare campaigns, and high-fashion runways.</p>
+            <div class="benefits-callout">
+              <h3>Why Richie Careers?</h3>
+              <ul>
+                <li>Quick 24-hour turnaround for customized packages</li>
+                <li>Diverse talent roster across all demographics</li>
+                <li>Professional contract management & billing transparency</li>
+                <li>Comprehensive support for on-location or travel projects</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="form-container">
+            <form id="request-form" class="premium-form">
+              <div class="form-title">Package Request</div>
+              <div class="form-group form-group-row">
+                <div>
+                  <label for="req-company">Company / Client</label>
+                  <input type="text" id="req-company" name="company" required>
+                </div>
+                <div>
+                  <label for="req-email">Email</label>
+                  <input type="email" id="req-email" name="email" required>
+                </div>
+              </div>
+              <div class="form-group form-group-row">
+                <div>
+                  <label for="req-phone">Phone</label>
+                  <input type="tel" id="req-phone" name="phone">
+                </div>
+                <div>
+                  <label for="req-region">Region</label>
+                  <select id="req-region" name="region" required>
+                    <option value="">Choose a region</option>
+                    <option>United Kingdom</option>
+                    <option>United States</option>
+                    <option>Europe</option>
+                    <option>Kuwait</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="req-division">Talent Division</label>
+                <select id="req-division" name="division" required>
+                  <option value="">Choose a division</option>
+                  <option>Women</option>
+                  <option>Men</option>
+                  <option>Kids</option>
+                  <option>Commercial</option>
+                  <option>Voiceover</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="req-brief">Project Brief</label>
+                <textarea id="req-brief" name="brief" rows="4"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Package Request</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODEL PORTFOLIO MODAL (DYNAMIC OVERLAY) -->
+  <div class="modal-overlay" id="model-modal">
+    <div class="modal-card">
+      <button class="modal-close" id="modal-close" aria-label="Close modal">&times;</button>
+      <div class="modal-grid">
+        <div class="modal-gallery">
+          <img src="" alt="Model Portfolio" class="modal-featured-img" id="modal-img">
+          <div class="modal-polaroids">
+            <!-- Dynamic extra pictures (digitals) -->
+            <div class="polaroid-thumb active"><img src="" alt="Polaroid View" class="thumb-img"></div>
+            <div class="polaroid-thumb"><img src="" alt="Polaroid View" class="thumb-img"></div>
+            <div class="polaroid-thumb"><img src="" alt="Polaroid View" class="thumb-img"></div>
+          </div>
+        </div>
+        <div class="modal-details">
+          <span class="modal-division" id="modal-division">WOMEN'S BOARD</span>
+          <h2 class="modal-name" id="modal-name">SAM MORGAN</h2>
+          
+          <div class="stats-table">
+            <div class="stats-row"><span class="stats-label">HEIGHT:</span><span class="stats-val" id="stat-height">5'9"</span></div>
+            <div class="stats-row" id="row-dress"><span class="stats-label">DRESS:</span><span class="stats-val" id="stat-dress">2-4</span></div>
+            <div class="stats-row" id="row-bust"><span class="stats-label">BUST:</span><span class="stats-val" id="stat-bust">34B</span></div>
+            <div class="stats-row" id="row-suit"><span class="stats-label">SUIT:</span><span class="stats-val" id="stat-suit">40R</span></div>
+            <div class="stats-row"><span class="stats-label">WAIST:</span><span class="stats-val" id="stat-waist">24"</span></div>
+            <div class="stats-row"><span class="stats-label">HIPS:</span><span class="stats-val" id="stat-hips">35"</span></div>
+            <div class="stats-row"><span class="stats-label">SHOES:</span><span class="stats-val" id="stat-shoes">8.5</span></div>
+            <div class="stats-row"><span class="stats-label">HAIR:</span><span class="stats-val" id="stat-hair">Blonde</span></div>
+            <div class="stats-row"><span class="stats-label">EYES:</span><span class="stats-val" id="stat-eyes">Green</span></div>
+            <div class="stats-row"><span class="stats-label">NATIONALITY:</span><span class="stats-val" id="stat-nationality">Swedish / American</span></div>
+            <div class="stats-row"><span class="stats-label">CITY BASED:</span><span class="stats-val" id="stat-city">Los Angeles</span></div>
+            <div class="stats-row"><span class="stats-label">UNION:</span><span class="stats-val" id="stat-union">SAG-AFTRA</span></div>
+          </div>
+
+          <div class="modal-actions">
+            <button class="btn btn-primary" id="modal-book-btn">Book This Model</button>
+            <a href="mailto:booking@richiecareers.com?subject=Inquiry" class="btn btn-secondary text-center">Direct Inquiry</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST MESSAGE SYSTEM -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Global Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="footer-logo">RICHIE CAREERS</a>
+        <p>A premier talent booking agency. Celebrating diversity, modern representation, and intentional careers.</p>
+        <p class="copyright">&copy; 2026 Richie Careers Management. All rights reserved.</p>
+      </div>
+      <div class="footer-social">
+        <h4>CONNECT WITH US</h4>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/richiecareers?igsh=MXJqaTdwd2g5cjlqcw==" aria-label="Instagram" target="_blank">Instagram</a>
+          <a href="mailto:avneetsmac@gmail.com" aria-label="Email">Gmail</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="models.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
