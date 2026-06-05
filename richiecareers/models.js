@@ -1,0 +1,245 @@
+// Richie Careers Model Database & Blog Database
+const MODELS = [
+  {
+    id: "skinner_jones",
+    name: "SKINNER JONES",
+    division: "Men",
+    image: "assets/male_model_one.png",
+    height: "6'1\"",
+    suit: "40R",
+    waist: "31\"",
+    hips: "38\"",
+    shoes: "10.5",
+    hair: "Brown",
+    eyes: "Blue",
+    nationality: "American",
+    city: "Los Angeles",
+    union: "Non-Union"
+  },
+  {
+    id: "sam_morgan",
+    name: "SAM MORGAN",
+    division: "Women",
+    image: "assets/female_model_one.png",
+    height: "5'9\"",
+    dress: "2-4",
+    bust: "34B",
+    waist: "24\"",
+    hips: "35\"",
+    shoes: "8.5",
+    hair: "Blonde",
+    eyes: "Green",
+    nationality: "Swedish / American",
+    city: "Los Angeles",
+    union: "SAG-AFTRA"
+  },
+  {
+    id: "taylor_miller",
+    name: "TAYLOR MILLER",
+    division: "Men",
+    image: "assets/male_model_one.png",
+    height: "6'2\"",
+    suit: "40L",
+    waist: "32\"",
+    hips: "39\"",
+    shoes: "11",
+    hair: "Dark Brown",
+    eyes: "Brown",
+    nationality: "Canadian",
+    city: "San Francisco",
+    union: "Non-Union"
+  },
+  {
+    id: "hannah",
+    name: "HANNAH",
+    division: "Women",
+    image: "assets/female_model_one.png",
+    height: "5'8\"",
+    dress: "4",
+    bust: "32C",
+    waist: "25\"",
+    hips: "36\"",
+    shoes: "8",
+    hair: "Auburn",
+    eyes: "Hazel",
+    nationality: "British",
+    city: "Los Angeles",
+    union: "Non-Union"
+  },
+  {
+    id: "dat_nguyen",
+    name: "DAT NGUYEN",
+    division: "Men",
+    image: "assets/male_model_one.png",
+    height: "6'0\"",
+    suit: "38R",
+    waist: "30\"",
+    hips: "37\"",
+    shoes: "10",
+    hair: "Black",
+    eyes: "Brown",
+    nationality: "Vietnamese",
+    city: "Los Angeles",
+    union: "Non-Union"
+  },
+  {
+    id: "diana_phorila",
+    name: "DIANA PHORILA",
+    division: "Women",
+    image: "assets/female_model_one.png",
+    height: "5'10\"",
+    dress: "2",
+    bust: "34A",
+    waist: "23.5\"",
+    hips: "34.5\"",
+    shoes: "9",
+    hair: "Black",
+    eyes: "Brown",
+    nationality: "Kenyan",
+    city: "San Diego",
+    union: "Non-Union"
+  },
+  {
+    id: "brandon_yoon",
+    name: "BRANDON YOON",
+    division: "Men",
+    image: "assets/male_model_one.png",
+    height: "6'1\"",
+    suit: "39R",
+    waist: "31\"",
+    hips: "38\"",
+    shoes: "10",
+    hair: "Black",
+    eyes: "Brown",
+    nationality: "Korean",
+    city: "Los Angeles",
+    union: "Non-Union"
+  },
+  {
+    id: "crystal",
+    name: "CRYSTAL",
+    division: "Women",
+    image: "assets/female_model_one.png",
+    height: "5'8.5\"",
+    dress: "4",
+    bust: "32D",
+    waist: "25\"",
+    hips: "36.5\"",
+    shoes: "8",
+    hair: "Brown",
+    eyes: "Brown",
+    nationality: "Latina",
+    city: "Los Angeles",
+    union: "SAG-AFTRA"
+  },
+  {
+    id: "blake_lewis",
+    name: "BLAKE LEWIS",
+    division: "Men",
+    image: "assets/male_model_one.png",
+    height: "6'0\"",
+    suit: "40R",
+    waist: "32\"",
+    hips: "39\"",
+    shoes: "10.5",
+    hair: "Light Brown",
+    eyes: "Grey",
+    nationality: "American",
+    city: "Los Angeles",
+    union: "SAG-AFTRA"
+  },
+  {
+    id: "natalie_morris",
+    name: "NATALIE MORRIS",
+    division: "Women",
+    image: "assets/female_model_one.png",
+    height: "5'9.5\"",
+    dress: "2",
+    bust: "33B",
+    waist: "24\"",
+    hips: "35\"",
+    shoes: "9",
+    hair: "Dark Brown",
+    eyes: "Green",
+    nationality: "Australian",
+    city: "Los Angeles",
+    union: "Non-Union"
+  },
+  {
+    id: "leo_c",
+    name: "LEO C.",
+    division: "Kids",
+    image: "assets/male_model_one.png",
+    height: "4'6\"",
+    dress: "Kids 8",
+    bust: "N/A",
+    waist: "22\"",
+    hips: "25\"",
+    shoes: "3 (Youth)",
+    hair: "Dirty Blonde",
+    eyes: "Blue",
+    nationality: "American",
+    city: "Los Angeles",
+    union: "Non-Union"
+  },
+  {
+    id: "mia_b",
+    name: "MIA B.",
+    division: "Kids",
+    image: "assets/female_model_one.png",
+    height: "4'2\"",
+    dress: "Kids 6",
+    bust: "N/A",
+    waist: "20\"",
+    hips: "23\"",
+    shoes: "2 (Youth)",
+    hair: "Brown",
+    eyes: "Hazel",
+    nationality: "Mexican / American",
+    city: "Los Angeles",
+    union: "Non-Union"
+  }
+];
+
+const BLOGS = [
+  {
+    id: "blake-lewis-vertical-film",
+    title: "Blake Lewis: The Rise of a Multi-Talented Superstar in Vertical Short Film Industry",
+    author: "Toby Nguyen",
+    date: "May 15, 2026",
+    summary: "Blake Lewis continues to dominate screen time in the fast-growing vertical short film sector. Discover how this Richie Careers star transitioned into high-demand digital storytelling.",
+    content: "Vertical short film formats are redefining mobile entertainment across platforms like TikTok, YouTube Shorts, and Reels. At the forefront of this digital revolution is Blake Lewis. Represented by Richie Careers Management, Blake has brought standard theatrical acting weight to fast-paced mobile productions, securing massive viewer retention and collaborations with top-tier brands."
+  },
+  {
+    id: "meet-brandon-yoon-rising-star",
+    title: "Meet Brandon Yoon: The Rising Star Making Waves Online and Beyond",
+    author: "Richie Careers Management",
+    date: "April 28, 2026",
+    summary: "An inside look into the quick success of Brandon Yoon, from runway bookings to viral social campaign partnerships.",
+    content: "With his striking looks and natural charisma, Brandon Yoon has quickly become one of the most requested models in Richie Careers Management's commercial print division. Partnering with top athletic and lifestyle brands, Brandon’s presence highlights the shift towards models who successfully bridge the gap between classic editorial print and digital influence."
+  },
+  {
+    id: "benefits-lasting-relationships-fitness-modeling",
+    title: "The Benefits of Building Lasting Relationships with Athletic Brands in Fitness Modeling",
+    author: "Richie Careers Management",
+    date: "April 10, 2026",
+    summary: "Why long-term campaigns are preferred over one-off gigs in the fitness industry, and how models can maintain client relations.",
+    content: "Fitness modeling requires more than just peak physical form; it demands reliability and brand alignment. Securing ongoing campaigns with top-tier labels like Nike, Puma, or Reebok ensures steady bookings and lets models become authentic ambassadors. At Richie Careers, we actively help our talent nurture these partnerships for multi-season contracts."
+  },
+  {
+    id: "rise-of-silver-fox-models-over-50",
+    title: "The Rise of the Silver Fox: Why Brands Are Embracing Models Over 50",
+    author: "Richie Careers Management",
+    date: "March 22, 2026",
+    summary: "Diverse representation is expanding, and models over 50 are experiencing a huge spike in high-fashion commercial demand.",
+    content: "Authenticity is the driving force behind modern marketing. Brands are increasingly acknowledging the purchasing power and sophistication of mature demographics. The demand for models over 50—popularly known as the 'Silver Fox' movement—has skyrocketed. These models bring elegance, life experience, and high reliability to premium advertising campaigns."
+  }
+];
+
+// Export if environment supports modules, else bind to window
+if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
+  module.exports = { MODELS, BLOGS };
+} else {
+  window.MODELS = MODELS;
+  window.BLOGS = BLOGS;
+}
